@@ -1,0 +1,388 @@
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Tibetan:wght@400;700&display=swap');
+  .poster-wrap {
+    background: linear-gradient(135deg, #1a3a5c 0%, #0d2240 100%);
+    padding: 18px;
+    font-family: 'Noto Serif Tibetan', serif;
+    min-height: 100vh;
+  }
+  .poster-inner {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 3px solid #c9a227;
+    box-shadow: 0 0 0 6px rgba(201,162,39,0.18);
+  }
+  .poster-header {
+    background: linear-gradient(90deg, #1a3a5c 0%, #0d2240 100%);
+    padding: 14px 20px 10px;
+    text-align: center;
+    border-bottom: 3px solid #c9a227;
+    position: relative;
+  }
+  .header-ornament {
+    color: #c9a227;
+    font-size: 18px;
+    letter-spacing: 8px;
+    display: block;
+    margin-bottom: 2px;
+  }
+  .poster-title {
+    color: #f5e09a;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.6;
+    margin: 0 0 6px;
+  }
+  .poster-meta {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    flex-wrap: wrap;
+  }
+  .meta-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #c9d8ea;
+    font-size: 11px;
+  }
+  .meta-icon {
+    background: rgba(201,162,39,0.25);
+    border: 1px solid #c9a227;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+  }
+  .poster-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    padding: 10px;
+    background: #f0f4f8;
+    gap: 8px;
+  }
+  .poster-card {
+    background: #fff;
+    border-radius: 8px;
+    border: 1.5px solid #c9a227;
+    overflow: hidden;
+  }
+  .card-header {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 6px 10px;
+  }
+  .card-num {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    font-weight: 700;
+    color: #fff;
+    flex-shrink: 0;
+  }
+  .card-title {
+    font-size: 11.5px;
+    font-weight: 700;
+    color: #fff;
+  }
+  .card-body {
+    padding: 8px 10px 10px;
+    font-size: 10.5px;
+    line-height: 1.7;
+    color: #1a2a3a;
+  }
+  .card-icon-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .card-illus {
+    flex-shrink: 0;
+    width: 52px;
+    height: 52px;
+  }
+  .card-full {
+    grid-column: span 2;
+  }
+  .tag {
+    display: inline-block;
+    background: #e8f0fa;
+    color: #1a3a5c;
+    border-radius: 4px;
+    padding: 1px 6px;
+    font-size: 9.5px;
+    margin: 2px 2px 0 0;
+    border: 0.5px solid #b5cfe8;
+  }
+  .result-bar {
+    margin: 6px 0 2px;
+  }
+  .bar-label {
+    display: flex;
+    justify-content: space-between;
+    font-size: 9.5px;
+    color: #1a3a5c;
+    margin-bottom: 2px;
+  }
+  .bar-track {
+    height: 10px;
+    background: #e0e8f0;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  .bar-fill {
+    height: 100%;
+    border-radius: 5px;
+  }
+  .c1 { background: #d97706; }
+  .c2 { background: #1a3a5c; }
+  .c3 { background: #15803d; }
+  .c4 { background: #7c3aed; }
+  .c5 { background: #b91c1c; }
+  .c6 { background: #0e7490; }
+  .c7 { background: #92400e; }
+  .c8 { background: #1e40af; }
+  .c9 { background: #065f46; }
+</style>
+<div class="poster-wrap">
+  <div class="poster-inner">
+    <div class="poster-header">
+      <span class="header-ornament">❖ ༄༅ ❖</span>
+      <div class="poster-title">དོན་ཚན། དུས་རྒྱུན་ཁ་ཐུན་རྒྱུན་མ་ཆད་པར་གཏང་མ་ཚུགས་པའི་གོམས་གཤིས་ཡར་དྲག་གཏང་ནི།</div>
+      <div class="poster-meta">
+        <div class="meta-item"><div class="meta-icon">👤</div>ཞིབ་འཚོལ་པ། ཀུན་ལེགས་དབང་ཕྱུག།</div>
+        <div class="meta-icon">🏫</div><span style="color:#c9d8ea;font-size:11px;">སྤ་རོ་མཐོ་རིམ་སློབ་གྲྭ།</span>
+        <div class="meta-icon">📅</div><span style="color:#c9d8ea;font-size:11px;">སྤྱི་ལོ་ ༢༠༢༦</span>
+      </div>
+    </div>
+
+    <div class="poster-grid">
+
+      <!-- 1 Background -->
+      <div class="poster-card">
+        <div class="card-header" style="background:#1a3a5c;">
+          <div class="card-num" style="background:#c9a227;">༡</div>
+          <div class="card-title">ངོ་སྤྲོད། / རྒྱབ་ཁུངས།</div>
+        </div>
+        <div class="card-body">
+          <div class="card-icon-row">
+            <svg class="card-illus" viewBox="0 0 52 52" fill="none">
+              <circle cx="26" cy="26" r="24" fill="#e8f0fa" stroke="#1a3a5c" stroke-width="1.5"/>
+              <circle cx="26" cy="18" r="7" fill="#1a3a5c"/>
+              <path d="M13 38 Q26 28 39 38" stroke="#c9a227" stroke-width="2" fill="none"/>
+              <path d="M18 38 Q26 44 34 38" fill="#e8f0fa" stroke="#1a3a5c" stroke-width="1"/>
+              <circle cx="26" cy="18" r="4" fill="#c9a227"/>
+              <path d="M22 32 Q26 36 30 32" stroke="#1a3a5c" stroke-width="1.2" fill="none"/>
+            </svg>
+            <div>དུས་རྒྱུན་ཁ་ཐུན་གཏང་མ་ཚུགས་པའི་དཀའ་ངལ་དེ་བསལ་ཏེ་མི་ཚེ་དོན་ལྡན་བཟོ་ཐབས་དང་མ་འོངས་སློབ་ཕྲུག་ཚུ་ལུ་ལམ་སྟོན་འབད་ཚུགསཔ་ལས་བརྟེན་ཨིན།</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2 Research Question -->
+      <div class="poster-card">
+        <div class="card-header" style="background:#b91c1c;">
+          <div class="card-num" style="background:#fca5a5;">༢</div>
+          <div class="card-title" style="color:#fff;">ཞིབ་འཚོལ་དྲི་བ།</div>
+        </div>
+        <div class="card-body">
+          <div class="card-icon-row">
+            <svg class="card-illus" viewBox="0 0 52 52" fill="none">
+              <circle cx="26" cy="26" r="24" fill="#fef2f2" stroke="#b91c1c" stroke-width="1.5"/>
+              <text x="26" y="33" text-anchor="middle" font-size="24" fill="#b91c1c">?</text>
+              <circle cx="26" cy="10" r="4" fill="#c9a227"/>
+              <path d="M22 14 Q18 22 22 26" stroke="#b91c1c" stroke-width="1.5" fill="none"/>
+            </svg>
+            <div>ཁ་ཐུན་དུས་རྒྱུན་གཏང་མ་ཚུགས་པའི་དཀའ་ངལ་ག་དེ་སྦེ་བསལ་ནི་སྨོ?</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3 Objectives -->
+      <div class="poster-card">
+        <div class="card-header" style="background:#15803d;">
+          <div class="card-num" style="background:#86efac;">༣</div>
+          <div class="card-title">དམིགས་དོན།</div>
+        </div>
+        <div class="card-body">
+          <div class="card-icon-row">
+            <svg class="card-illus" viewBox="0 0 52 52" fill="none">
+              <circle cx="26" cy="26" r="24" fill="#f0fdf4" stroke="#15803d" stroke-width="1.5"/>
+              <circle cx="26" cy="26" r="14" stroke="#15803d" stroke-width="1.5" fill="none"/>
+              <circle cx="26" cy="26" r="8" stroke="#c9a227" stroke-width="1.5" fill="none"/>
+              <circle cx="26" cy="26" r="3" fill="#b91c1c"/>
+              <line x1="26" y1="2" x2="26" y2="10" stroke="#15803d" stroke-width="1.5"/>
+              <line x1="42" y1="26" x2="50" y2="26" stroke="#15803d" stroke-width="1.5"/>
+            </svg>
+            <div>དུས་རྒྱུན་ཁ་ཐུན་གཏང་མ་ཚུགས་པའི་དཀའ་ངལ་བསལ་ནི་དང་མ་འོངས་སློབ་ཕྲུག་ཚུ་ལུ་ཁ་ཐུན་གཏང་དགོཔ་གལ་ཆེ་བའི་སྐོར་ལམ་སྟོན་འབད་ནིའི་དོན་ལུ་ཨིན།</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5 Activities -->
+      <div class="poster-card">
+        <div class="card-header" style="background:#d97706;">
+          <div class="card-num" style="background:#fde68a;color:#92400e;">༥</div>
+          <div class="card-title">དང་ལེན་འབད་ཡོདཔ།</div>
+        </div>
+        <div class="card-body">
+          <div style="display:flex;flex-direction:column;gap:3px;">
+            <div style="display:flex;align-items:center;gap:5px;"><span style="color:#d97706;font-size:12px;">✦</span>དྲོ་པ་དུས་ཚོད་ཁར་ལོངས་ཡོད་མེད་ཉིན་དེབ་ནང་ཐོ་བཀོད།</div>
+            <div style="display:flex;align-items:center;gap:5px;"><span style="color:#d97706;font-size:12px;">✦</span>གནས་འགག་ཅན་གྱི་ཆ་རོགས་ལུ་ལྟ་རྟོག་འབད་བཅུག།</div>
+            <div style="display:flex;align-items:center;gap:5px;"><span style="color:#d97706;font-size:12px;">✦</span>འབྲེལ་ཡོད་ཀྱི་དཔེ་ཆ་ལྷག་ལྟ་འབད།</div>
+            <div style="display:flex;align-items:center;gap:5px;"><span style="color:#d97706;font-size:12px;">✦</span>ཐུན་ལུ་ཉམས་ལེན་ཡོད་མི་ཚུ་དང་འབྲེལ་བ་འཐབ།</div>
+            <div style="display:flex;align-items:center;gap:5px;"><span style="color:#d97706;font-size:12px;">✦</span>ཡོངས་འབྲེལ་ཚུ་ལས་འཚོལ་ཞིབ་འབད།</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4 Methodology -->
+      <div class="poster-card card-full">
+        <div class="card-header" style="background:#7c3aed;">
+          <div class="card-num" style="background:#c4b5fd;color:#4c1d95;">༤</div>
+          <div class="card-title">ཐབས་ལམ།</div>
+        </div>
+        <div class="card-body">
+          <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:8px;text-align:center;">
+            <div style="background:#f5f3ff;border-radius:6px;padding:6px 4px;border:1px solid #c4b5fd;">
+              <svg width="30" height="30" viewBox="0 0 30 30" style="display:block;margin:0 auto 3px;"><circle cx="15" cy="15" r="13" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.2"/><text x="15" y="20" text-anchor="middle" font-size="13">👥</text></svg>
+              <div style="font-size:9px;color:#5b21b6;font-weight:700;">བཅའ་མར་གཏོགས་མི།</div>
+              <div style="font-size:10px;color:#7c3aed;">༥</div>
+            </div>
+            <div style="background:#f5f3ff;border-radius:6px;padding:6px 4px;border:1px solid #c4b5fd;">
+              <svg width="30" height="30" viewBox="0 0 30 30" style="display:block;margin:0 auto 3px;"><circle cx="15" cy="15" r="13" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.2"/><text x="15" y="20" text-anchor="middle" font-size="13">📅</text></svg>
+              <div style="font-size:9px;color:#5b21b6;font-weight:700;">དུས་ཡུན།</div>
+              <div style="font-size:10px;color:#7c3aed;">བདུན་ཕྲག་༡</div>
+            </div>
+            <div style="background:#f5f3ff;border-radius:6px;padding:6px 4px;border:1px solid #c4b5fd;">
+              <svg width="30" height="30" viewBox="0 0 30 30" style="display:block;margin:0 auto 3px;"><circle cx="15" cy="15" r="13" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.2"/><text x="15" y="20" text-anchor="middle" font-size="13">🏫</text></svg>
+              <div style="font-size:9px;color:#5b21b6;font-weight:700;">ས་གནས།</div>
+              <div style="font-size:10px;color:#7c3aed;">སྤ་རོ་སློབ་གྲྭ།</div>
+            </div>
+            <div style="background:#f5f3ff;border-radius:6px;padding:6px 4px;border:1px solid #c4b5fd;">
+              <svg width="30" height="30" viewBox="0 0 30 30" style="display:block;margin:0 auto 3px;"><circle cx="15" cy="15" r="13" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.2"/><text x="15" y="20" text-anchor="middle" font-size="13">📋</text></svg>
+              <div style="font-size:9px;color:#5b21b6;font-weight:700;">མཁོ་ཆས།</div>
+              <div style="font-size:10px;color:#7c3aed;">དྲིབ་དྲིས་ལན།</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6 Results -->
+      <div class="poster-card card-full">
+        <div class="card-header" style="background:#0e7490;">
+          <div class="card-num" style="background:#a5f3fc;color:#164e63;">༦</div>
+          <div class="card-title">གྲུབ་འབྲས།</div>
+        </div>
+        <div class="card-body">
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;align-items:center;">
+            <div>
+              <div class="result-bar">
+                <div class="bar-label"><span>འགོ་ཐོག་གནས་སྡུད།</span><span style="font-weight:700;color:#0e7490;">30%</span></div>
+                <div class="bar-track"><div class="bar-fill" style="width:30%;background:#0e7490;"></div></div>
+              </div>
+              <div class="result-bar">
+                <div class="bar-label"><span>ཤུལ་མའི་གནས་སྡུད།</span><span style="font-weight:700;color:#c9a227;">90%</span></div>
+                <div class="bar-track"><div class="bar-fill" style="width:90%;background:#c9a227;"></div></div>
+              </div>
+              <div style="font-size:9.5px;color:#374151;margin-top:5px;">ཁ་ཐུན་དུས་ཚོད་༦ ལུ་བཏང་ཚུགསཔ་འགྱོ་ཡོདཔ་མ་ཚད་ དམིགས་པ་བསྐྱེད་ཐངས་དང་ལུས་ཀྱི་གནས་ཐབས་ཤེས་ཡོདཔ་ལས་བཏང་ཚུགསཔ་འགྱོ་ཡོད།</div>
+            </div>
+            <div style="text-align:center;">
+              <svg width="100" height="100" viewBox="0 0 100 100">
+                <circle cx="50" cy="50" r="38" fill="none" stroke="#e0e8f0" stroke-width="10"/>
+                <circle cx="50" cy="50" r="38" fill="none" stroke="#c9a227" stroke-width="10" stroke-dasharray="214 239" stroke-dashoffset="60" stroke-linecap="round"/>
+                <circle cx="50" cy="50" r="38" fill="none" stroke="#0e7490" stroke-width="10" stroke-dasharray="72 239" stroke-dashoffset="-154" stroke-linecap="round"/>
+                <text x="50" y="46" text-anchor="middle" font-size="13" font-weight="700" fill="#c9a227">90%</text>
+                <text x="50" y="60" text-anchor="middle" font-size="8" fill="#6b7280">ཤུལ་མ།</text>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 7 Reflection -->
+      <div class="poster-card">
+        <div class="card-header" style="background:#92400e;">
+          <div class="card-num" style="background:#fde68a;color:#92400e;">༧</div>
+          <div class="card-title" style="color:#fff;">བསམ་ཞིབ།</div>
+        </div>
+        <div class="card-body">
+          <div class="card-icon-row">
+            <svg class="card-illus" viewBox="0 0 52 52" fill="none">
+              <circle cx="26" cy="26" r="24" fill="#fffbeb" stroke="#92400e" stroke-width="1.5"/>
+              <path d="M16 22 Q26 12 36 22 Q38 30 26 38 Q14 30 16 22Z" fill="#fde68a" stroke="#92400e" stroke-width="1.2"/>
+              <circle cx="26" cy="26" r="5" fill="#d97706"/>
+              <path d="M26 16 L26 14" stroke="#92400e" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M32 18 L34 16" stroke="#92400e" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M20 18 L18 16" stroke="#92400e" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+            <div>
+              <div>གནས་སྡུད་བསྡུ་ལེན། དྲི་བ་དྲིས་ལན་དང་ཡིག་ཆ་དབྱེ་དཔྱད་འབད་ཡི།</div>
+              <div style="margin-top:3px;">བརྡ་བརྒྱུད་ཚུ་དུས་ཚོད་ཚད་འཛིན་མེད་པར་སྤྱོད་མི་ལས་བརྟེན།</div>
+              <div style="margin-top:3px;">དུས་ཚོད་ཀྱི་དྲན་བརྡ་བཟོ་སྟེ་ལག་ལེན་འཐབ་ནི།</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 8 Conclusion -->
+      <div class="poster-card">
+        <div class="card-header" style="background:#1e40af;">
+          <div class="card-num" style="background:#bfdbfe;color:#1e3a8a;">༨</div>
+          <div class="card-title">མཇུག་བསྡུ།</div>
+        </div>
+        <div class="card-body">
+          <div class="card-icon-row">
+            <svg class="card-illus" viewBox="0 0 52 52" fill="none">
+              <circle cx="26" cy="26" r="24" fill="#eff6ff" stroke="#1e40af" stroke-width="1.5"/>
+              <path d="M16 36 L16 24 Q16 16 26 16 Q36 16 36 24 L36 36" stroke="#1e40af" stroke-width="1.5" fill="none"/>
+              <path d="M20 28 Q26 34 32 28" stroke="#c9a227" stroke-width="1.5" fill="none"/>
+              <circle cx="26" cy="20" r="4" fill="#1e40af"/>
+              <line x1="16" y1="36" x2="36" y2="36" stroke="#1e40af" stroke-width="2"/>
+            </svg>
+            <div>ཁ་ཐུན་དགེ་སྦྱོར་མ་ཆད་པར་གཏང་ཚུགས་དང་མི་ཚུགས་དེ་ཡང་གཙོ་བོ་རང་སེམས་རང་གིས་བཏུལ་ཏེ་གོམས་འདྲིས་བཙུག་པ་ཅིན་འབད་མ་ཚུགས་པའི་ལཱ་ཅིག་ག་ནི་ཡང་མེདཔ་ཨིན།།</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 9 Recommendations -->
+      <div class="poster-card card-full">
+        <div class="card-header" style="background:#065f46;">
+          <div class="card-num" style="background:#6ee7b7;color:#064e3b;">༩</div>
+          <div class="card-title">གྲོས་འདེབས།</div>
+        </div>
+        <div class="card-body">
+          <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;">
+            <div style="background:#f0fdf4;border-radius:6px;padding:7px 9px;border:1px solid #6ee7b7;text-align:center;">
+              <div style="font-size:18px;margin-bottom:3px;">🌱</div>
+              <div style="font-size:9.5px;color:#065f46;font-weight:700;">གནས་རིམ་ཆུང་བ་ལས་འགོ་བཙུགས་དགོཔ།</div>
+            </div>
+            <div style="background:#f0fdf4;border-radius:6px;padding:7px 9px;border:1px solid #6ee7b7;text-align:center;">
+              <div style="font-size:18px;margin-bottom:3px;">🧘</div>
+              <div style="font-size:9.5px;color:#065f46;font-weight:700;">རང་གིས་རང་ལུ་དགའ་བ་སྒོམ་ནི།</div>
+            </div>
+            <div style="background:#f0fdf4;border-radius:6px;padding:7px 9px;border:1px solid #6ee7b7;text-align:center;">
+              <div style="font-size:18px;margin-bottom:3px;">🔍</div>
+              <div style="font-size:9.5px;color:#065f46;font-weight:700;">སེམས་ལུ་འགྱུར་བ་འོང་ཡོད་མེད་དབྱེ་དཔྱད་འབད་ནི།</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div style="background:#1a3a5c;padding:6px;text-align:center;border-top:2px solid #c9a227;">
+      <span style="color:#c9a227;font-size:10px;letter-spacing:4px;">❖ ༄༅ ❖</span>
+    </div>
+  </div>
+</div>
